@@ -15,6 +15,7 @@ for(let i=0; i<efeito.length;i++){
 for(let i=0;i<image.length;i++){
     image[i].onmouseenter = function(){
         this.style.opacity = "0.5";
+        this.style.cursor="pointer";
     }
     image[i].onmouseleave = function(){
         this.style.opacity = "1";

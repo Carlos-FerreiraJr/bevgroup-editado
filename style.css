@@ -1,9 +1,15 @@
 *{
     margin: 0; 
+    overflow-x: hidden;
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+/* configuracoes da lista */
+ul{
+    list-style-type: none;
+}
+/* fim das configuracoes da lista */
 /* configuração de botoes */
 button{
     border: none;
@@ -64,7 +70,16 @@ h1{
     background-color:#FF7300;
     position:fixed;
     bottom:-1px;
-    right:-1px;
+    right:0.712em;
+    border-radius: 0.5em;
+    padding:0.5em;
+    color:white;
+    z-index:2;
+    cursor:pointer;
+}
+input{
+    padding-left:12px;
+    padding-right:12px;  
 }
 .cadastrarEntrar{
     background-color:#2b313b;
@@ -119,16 +134,49 @@ footer{
     font-size: 14px;
     text-transform: uppercase;
     font-family: arial;
-    height:10em;
+    height:18.18em;
+}
+.footerDireitos{
+    height: 128px;
+    background-color: #2b313b;
+}
+.footerDireitos>div{
+    font-size: xx-small;
+    color:grey;
+    display:flex;
+    text-align: center;
+    padding-left:40px;
+    padding-right:40px;
+    
 }
 .footer1{
     background-color: #f6f5f5;   
+    height:7.25em;
 }
+.footer1>div{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    justify-content: space-between;
+    height:4.3em;
+
+}
+.footer2>div>h3{
+    color:white;
+}
+
+
 h3{
     color:black;
+    font-size:14px;
 }
 .footer2{
     background-color:#4e555c;
+    display: flex;
+}
+.sobreNos{
+        display:flex;
 }
 /* fim config footer */
 /* configurações media screen */
@@ -187,6 +235,16 @@ h3{
         text-transform: uppercase;
         font-family: arial;
         height:10em;
+    }
+    .footer2{
+        background-color:#4e555c;
+        display: flex;
+        flex-direction: column; 
+        border:2px solid green;
+        height:48em;
+    }
+    .footerDireitos>div>img{
+        display: none;
     }
 }
 /* fim configuracao media screen */
