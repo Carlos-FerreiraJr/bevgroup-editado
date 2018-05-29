@@ -57,11 +57,12 @@ h1{
     margin-bottom:30px;
 }
 /* fim configuracoes de texto */
-/* configuracoes de sections ,sidebar,titulos ,e <a> */
-.contatoLink{  
-    color: #4e555c; 
+/* configuracoes de sections ,efeitos,sidebar,titulos ,hr,e <a> */
+.efeitoLink{  
+    color: gray;
     text-decoration: none; 
 }
+
 .carrinhoLink{
     text-decoration: none; 
     color:white;
@@ -87,6 +88,7 @@ input{
     justify-content: space-around;
     align-items: center;
     height:2.25em;
+
 }
 .pesquisa{
     background-color: rgb(78, 85, 92);
@@ -109,13 +111,15 @@ input{
 .produtosExposicao{
     display: flex;
     justify-content: space-around;
+
+    width: 99%;
 }
 hr{
     margin-top:25px;
     margin-bottom:20px;
     justify-content: center;
-    width:90%;
-    margin-left:35px;    
+    width:95%;
+    margin-left:25px;    
     opacity: 0.3;
 }
 .h1config{
@@ -137,7 +141,6 @@ footer{
     height:18.18em;
 }
 .footerDireitos{
-    height: 128px;
     background-color: #2b313b;
 }
 .footerDireitos>div{
@@ -166,7 +169,6 @@ footer{
     color:white;
 }
 
-
 h3{
     color:black;
     font-size:14px;
@@ -175,8 +177,21 @@ h3{
     background-color:#4e555c;
     display: flex;
 }
-.sobreNos{
+.sobreNos>ul{
         display:flex;
+        flex-direction: column;  
+        justify-content: space-between;
+        align-items: flex-start;
+}
+.footer2>div>ul>h3{
+    color:white;
+}
+/* outras configurações */
+.detail{
+    color:red;
+}
+#busca{
+    flex-basis: 3em;
 }
 /* fim config footer */
 /* configurações media screen */
@@ -208,7 +223,6 @@ h3{
         margin-left:0px;
     }
     .imagens-section{
-        width:30%;
         width: 30%;
         height: 10em;       
     }
@@ -240,7 +254,6 @@ h3{
         background-color:#4e555c;
         display: flex;
         flex-direction: column; 
-        border:2px solid green;
         height:48em;
     }
     .footerDireitos>div>img{

@@ -1,4 +1,4 @@
-let efeito = document.querySelectorAll('.contatoLink');
+let efeito = document.querySelectorAll('.efeitoLink');
 let buttonEnter = document.querySelector('#botaoEntrar');
 let buttonCad = document.querySelector('#botaoCad');
 let image = document.querySelectorAll('.imagens-section');

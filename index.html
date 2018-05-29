@@ -16,7 +16,7 @@
     <!-- cabecalho parte-1 -->
     <div class="cadastrarEntrar">
         <p class="texto1">FALE COM A GENTE: (11) 2667-4762 / (11) 94212-8103</p>
-        <div class="botoes">
+        <div>
             <button id="botaoEntrar">Entre</button>
             <button id="botaoCad">Cadastrar</button>
         </div>
@@ -24,9 +24,11 @@
     <!-- cabecalho parte-2 -->
     <div class="pesquisa">
         <img id="logo" src="https://menu.com.vc/skin/frontend/menu/marketplace/images/logobevgroup.png" alt="">
-        <div id="input1">
-            <input type="text">
-        </div>
+        <form id="input1" action="" method="post">
+            <div class="container">
+                <input type="search" id="busca" name="q">
+            </div>
+        </form>
         <div>
             <a href="#" class="carrinhoLink">MEU CARRINHO:</a>
             <a href="#" class="carrinhoLink">Item - R$0,00</a>
@@ -59,55 +61,51 @@
     <footer class="footer1">
         <div>
             <h3>VOCÊ É UM FORNECEDOR?</h3>
-            <a href="#" class="contatoLink"><p>CLIQUE E FALE COM A GENTE. COMECE A VENDER RAPIDAMENTE, SEM BUROCRACIA.</p></a>
+            <a href="#" class="efeitoLink"><p>CLIQUE E FALE COM A GENTE. COMECE A VENDER RAPIDAMENTE, SEM BUROCRACIA.</p></a>
         </div>
         <div>
             <h3> VOCÊ É UMA REDE OU FRANQUIA?</h3>
-            <a href="#" class="contatoLink"> CLIQUE AQUI E CONHEÇA NOSSA SOLUÇÃO ESPECIALIZADA PARA GRANDES CONTAS.</a>
+            <a href="#" class="efeitoLink"> CLIQUE AQUI E CONHEÇA NOSSA SOLUÇÃO ESPECIALIZADA PARA GRANDES CONTAS.</a>
         </div>
     </footer>
     <footer class="footer2">
         <div class="sobreNos">
-            
-            <ul>
-                <h3>SIGA A GENTE</h3>
-                <li>Facebook</li>
-                <li>Linkedin</li>
-                <li>instagram</li>
-                <li>twitter</li>
-                <li>Rss</li>
-                <li>Whatsapp</li>
-            </ul>
+            <h3>SIGA A GENTE</h3>
+            <a >Facebook</a>
+            <li href=>Linkedin</li>
+            <li>instagram</li>
+            <li>twitter</li>
+            <li>Rss</li>
+            <li>Whatsapp</li>
         </div>
         <div>
-            
             <ul>
                 <h3>LINKS ÚTEIS</h3>
-                <li>QUEM SOMOS</li>
-                <li>O QUE DIZEM NA MÍDIA</li>
-                <li>ARTIGOS</li>
-                <li> FALE COM A GENTE</li>
+                <li><a href="#" class="efeitoLink">QUEM SOMOS</a></li>
+                <li><a href="#" class="efeitoLink">O QUE DIZEM NA MÍDIA</a></li>
+                <li><a href="#" class="efeitoLink">ARTIGOS</a></li>
+                <li><a href="#" class="efeitoLink"> FALE COM A GENTE</a></li>
             </ul>
         </div>
         <div>
             <ul>
                 <h3>MINHA CONTA</h3>
-                <li>MINHA CONTA</li>
-                <li>TERMOS E CONDIÇÕES</li>
-                <li>ATENDIMENTO AO CLIENTE</li>
-                <li>MAPA DO SITE</li>
+                <li><a href="#" class="efeitoLink">MINHA CONTA</a></li>
+                <li><a href="#" class="efeitoLink">TERMOS E CONDIÇÕES</a></li>
+                <li><a href="#" class="efeitoLink">ATENDIMENTO AO CLIENTE</a></li>
+                <li><a href="#" class="efeitoLink">MAPA DO SITE</a></li>
             </ul>  
         </div>
         <div>
-            
             <ul>
                 <h3>Receba novidades</h3>
-                <li><p>Email<span>*</span></p>
-                    <input type="text" placeholder="email">
+                <li><p>Email<span class="detail">*</span></p>
+                    <input type="email" placeholder="email">
                 </li>
-                <li><p>Telefone<span>*</span></p>
-                    <input type="number" placeholder="núm. do celular">
+                <li><p>Telefone<span class="detail">*</span></p>
+                    <input type="tel" placeholder="núm. do celular">
                 </li>
+                <li><button>enviar</button></li>
             </ul>  
         </div>
     </footer>
