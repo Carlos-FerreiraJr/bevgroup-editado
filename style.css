@@ -62,7 +62,6 @@ h1{
     color: gray;
     text-decoration: none; 
 }
-
 .carrinhoLink{
     text-decoration: none; 
     color:white;
@@ -135,13 +134,57 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    font-size: 14px;
+    font-size: 11px;
     text-transform: uppercase;
     font-family: arial;
     height:18.18em;
 }
 .footerDireitos{
     background-color: #2b313b;
+    height:108px;
+}
+
+.follow-footer{
+    display:flex;
+    height:15em;
+    padding-bottom:90px;
+}
+
+.follow-footer>ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.link-footer{
+    display:flex;
+    height:15em;
+    padding-bottom:90px;
+}
+.link-footer>ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.conta-footer{
+    height:15em;
+    display:flex;
+    padding-bottom:90px;
+}
+.novidades-footer{
+    display:flex;
+    height:15em;
+    padding-bottom:90px;
+}
+.novidades-footer>ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.conta-footer>ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly; 
 }
 .footerDireitos>div{
     font-size: xx-small;
@@ -150,7 +193,10 @@ footer{
     text-align: center;
     padding-left:40px;
     padding-right:40px;
-    
+
+}
+.footerDireitos>div:first-child{
+    width:40%;
 }
 .footer1{
     background-color: #f6f5f5;   
@@ -176,6 +222,7 @@ h3{
 .footer2{
     background-color:#4e555c;
     display: flex;
+    height:291px;
 }
 .sobreNos>ul{
         display:flex;
@@ -258,6 +305,21 @@ h3{
     }
     .footerDireitos>div>img{
         display: none;
+    }
+    .link-footer{
+        padding-bottom:0px;
+    }
+    .conta-footer{
+        padding-bottom:0px;
+    }
+    .novidades-footer{
+        padding-bottom:0px;
+    }
+    .follow-footer{
+        padding-bottom:0px;
+    }
+    .follow-footer>ul{
+        /* flex-direction: row; */
     }
 }
 /* fim configuracao media screen */
